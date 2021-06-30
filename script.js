@@ -4,9 +4,11 @@ const panels = document.querySelectorAll('.panel');
 // });
 const container = document.querySelector('.container');
 container.addEventListener('click', (event) => {
-  if ((event.target.classList.contains = 'panel')) {
+  if (event.target.className === 'panel') {
     removeActiveClasses();
     event.target.classList.add(`active`);
+  } else {
+    removeActiveClasses();
   }
 });
 
