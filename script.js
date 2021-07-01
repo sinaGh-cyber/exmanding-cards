@@ -1,8 +1,6 @@
 const panels = document.querySelectorAll('.panel');
-// panels.forEach(panel => {
-
-// });
 const container = document.querySelector('.container');
+
 container.addEventListener('click', (event) => {
   if (event.target.className === 'panel') {
     removeActiveClasses();
